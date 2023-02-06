@@ -4,7 +4,7 @@ import Rick from '../imagenes/rick-grimes.jpg';
 function Testimonio() {
   return(
     <div className='contenedor-testimonio'>
-      <img className='imagen-testimonio' src={Rick} />
+      <img className='imagen-testimonio' src={Rick} alt='Rick Grimes' />
       <div className='contenedor-texto-testimonio'>
         <p className='nombre-testimonio'>Rick Grimes en Alexandría</p>
         <p className='cargo-testimonio'>Líder de Alexandría</p>
