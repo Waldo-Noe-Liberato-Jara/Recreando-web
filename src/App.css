@@ -3,16 +3,48 @@
   margin: 0;
   box-sizing: border-box;
 }
+.App{
+  margin-top: 1rem;
+}
+
+.Titulo{
+  text-align: center;
+}
 .contenedor-testimonio{
-  background: black;
+  background: #000;
   width: 80%;
-  margin: 1rem auto;
+  margin: 2rem auto;
   display: flex;
-  outline: blue solid 1px;
 }
 .imagen-testimonio{
-  width: 100%;
+  width: 375px;
+  height: 375px;
+  object-fit: cover;
 }
 .contenedor-texto-testimonio{
+  padding: 3rem;
   width: 100%;
+  color: #fff;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+.nombre-testimonio{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.cargo-testimonio{
+  font-size: 1.5rem;
+}
+.texto-testimonio{
+
+}
+
+@media (max-width: 990px) {
+  .contenedor-testimonio {
+    width: 375px;
+    flex-direction: column;
+  }
 }

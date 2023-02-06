@@ -1,14 +1,13 @@
 import React from 'react';
-import Rick from '../imagenes/rick-grimes.jpg';
 
-function Testimonio() {
+function Testimonio(props) {
   return(
     <div className='contenedor-testimonio'>
-      <img className='imagen-testimonio' src={Rick} alt='Rick Grimes' />
+      <img className='imagen-testimonio' src={ require(`../imagenes/${props.imagen}`) } alt={props.nombre} />
       <div className='contenedor-texto-testimonio'>
-        <p className='nombre-testimonio'>Rick Grimes en Alexandría</p>
-        <p className='cargo-testimonio'>Líder de Alexandría</p>
-        <p className='texto-testimonio'>No lamento todo lo que dije ayer, sólo siento no haberlo dicho antes</p>
+        <p className='nombre-testimonio'>{props.nombre} en {props.ciudad}</p>
+        <p className='cargo-testimonio'>{props.cargo} de {props.empresa}</p>
+        <p className='texto-testimonio'>{props.testimonio}</p>
       </div>
     </div>
   );
