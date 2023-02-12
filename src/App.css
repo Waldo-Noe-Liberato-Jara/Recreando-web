@@ -10,7 +10,25 @@
 .Titulo{
   text-align: center;
 }
+
+.remover-personaje{
+  position: absolute;
+  color: #fff;
+  width: 100%;
+  padding: .5rem;
+}
+.btn-remover{
+  font-family: arial;
+  font-size: 1.5rem;
+  background: red;
+  padding: 0rem .5rem .2rem .5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+}
+
 .contenedor-testimonio{
+  position: relative;
   background: #000;
   width: 80%;
   margin: 2rem auto;
@@ -43,5 +61,15 @@
   .contenedor-testimonio {
     width: 375px;
     flex-direction: column;
+  }
+  .imagen-testimonio{
+    order: 1 !important;
+  }
+  .contenedor-texto-testimonio{
+    order: 2 !important;
+  }
+
+  .remover-personaje {
+    text-align: end !important;
   }
 }
