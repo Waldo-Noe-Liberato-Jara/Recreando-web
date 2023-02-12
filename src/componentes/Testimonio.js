@@ -2,7 +2,7 @@ import React from 'react';
 
 var contador = 0;
 function Clickear() {
-  contador = contador+1;
+  contador = contador + 1;
   console.log(contador);
 }
 

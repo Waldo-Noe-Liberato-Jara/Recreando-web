@@ -25,9 +25,9 @@ function App() {
           return (
             <Testimonio
               key={index}
-              estilo_btn_remover={ (index % 2 === 0) ? "end" : "start" }
-              estilo_imagen={ (index % 2 === 0) ? 1 : 2 }
-              estilo_texto={ (index % 2 === 0) ? 2 : 1 }
+              estilo_btn_remover={(index % 2 === 0) ? "end" : "start"}
+              estilo_imagen={(index % 2 === 0) ? 1 : 2}
+              estilo_texto={(index % 2 === 0) ? 2 : 1}
               nombre={elemento.nombre}
               ciudad={elemento.ciudad}
               cargo={elemento.cargo}
